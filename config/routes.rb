@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  get 'dresses/index'
+
+  get 'dresses/new'
+
+  get 'dresses/create'
+
+  get 'dresses/edit'
+
+  get 'dresses/update'
+
+  get 'dresses/delete'
+
+  get 'dresses/show'
+
+  root 'dresses#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
