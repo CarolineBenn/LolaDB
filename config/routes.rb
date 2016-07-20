@@ -1,5 +1,19 @@
 Rails.application.routes.draw do
-  get 'dresses/index'
+  get 'clients', to: 'clients#index'
+
+  get 'clients/show'
+
+  get 'clients/new'
+
+  get 'clients/create'
+
+  get 'clients/edit'
+
+  get 'clients/update'
+
+  get 'clients/delete'
+
+  get 'dresses', to: 'dresses#index'
 
   get 'dresses/new'
 
