@@ -1,2 +1,20 @@
-<h1>Dresses#index</h1>
-<p>Find me in app/views/dresses/index.html.erb</p>
+<div class="page-header">
+  <div class="row">
+    <div class="medium-12 columns">
+      <h1>Dresses</h1>
+    </div>
+  </div>  
+</div>
+
+<% @dresses.in_groups_of(3) do |group| %>
+<div class="row">
+  <% group.compact.each do |dress| %>
+  <div class="medium-4 columns">
+    <%#= link_to (image_tag dress.image), dress_path(dress), class: "one-hundred" %>
+    <%= link_to dress.name, dress_path(dress) %>
+  </div>
+  <% end %>
+</div>
+<hr>
+<% end %>
+

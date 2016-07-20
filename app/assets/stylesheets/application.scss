@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+
+ body {
+   background: #efefef;
+ }
+
+ .page-header {
+   background: #FA3AAB;
+   margin-bottom: 3em;
+   
+   &.dress-page { background: orange; }
+   &.client-page { background: #11AA88; }
+
+   h1, h2, h3, h4, h5 ,h6 {
+     color: white;
+     text-align: center;
+     font-family: 'Hammersmith One', sans-serif;
+   }
+
+ }

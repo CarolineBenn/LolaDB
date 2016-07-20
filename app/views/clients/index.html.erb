@@ -1,2 +1,21 @@
-<h1>Clients#index</h1>
-<p>Find me in app/views/clients/index.html.erb</p>
+<div class="page-header client-page">
+  <div class="row">
+    <div class="medium-12 columns">
+      <h1>Clients</h1>
+    </div>
+  </div>  
+</div>
+
+
+<% @clients.in_groups_of(3) do |group| %>
+<div class="row">
+  <% group.compact.each do |client| %>
+  <div class="medium-4 columns">
+    <%#= link_to (image_tag client.image), client_path(client), class: "one-hundred" %>
+    <%= link_to client.name, client_path(client) %>
+  </div>
+  <% end %>
+</div>
+<hr>
+<% end %>
+
