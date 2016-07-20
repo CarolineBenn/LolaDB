@@ -1,32 +1,11 @@
 Rails.application.routes.draw do
   get 'clients', to: 'clients#index'
-
-  get 'clients/show'
-
-  get 'clients/new'
-
-  get 'clients/create'
-
-  get 'clients/edit'
-
-  get 'clients/update'
-
-  get 'clients/delete'
-
   get 'dresses', to: 'dresses#index'
 
-  get 'dresses/new'
+  resources :dresses
+  resources :clients 
 
-  get 'dresses/create'
-
-  get 'dresses/edit'
-
-  get 'dresses/update'
-
-  get 'dresses/delete'
-
-  get 'dresses/show'
-
+  
   root 'dresses#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

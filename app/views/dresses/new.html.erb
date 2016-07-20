@@ -1,2 +1,18 @@
 <h1>Dresses#new</h1>
 <p>Find me in app/views/dresses/new.html.erb</p>
+
+
+<h2>Form for dresses new:</h2>
+
+<%= form_for @dress do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, autofocus: true, placeholder: "Dress Name" %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description, autofocus: true, placeholder: "Description" %>
+
+  <%= f.label :rrp %>
+  <%= f.number_field :rrp, autofocus: true, placeholder: "eg 225"%>
+
+  <%= f.submit "Submit", class: "button" %>
+<% end %>
