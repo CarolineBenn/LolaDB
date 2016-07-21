@@ -20,11 +20,11 @@
  }
 
  .page-header {
-   background: #FA3AAB;
    margin-bottom: 3em;
    
-   &.dress-page { background: #FA3AAB; }
+   &.dress-page  { background: #FA3AAB; }
    &.client-page { background: #11AA88; }
+   &.order-page  { background: #EE634F; }
 
    h1, h2, h3, h4, h5 ,h6 {
      color: white;

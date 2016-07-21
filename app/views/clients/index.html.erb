@@ -12,7 +12,7 @@
   <% group.compact.each do |client| %>
   <div class="medium-4 columns">
     <%#= link_to (image_tag client.image), client_path(client), class: "one-hundred" %>
-    <%= link_to client.name, client_path(client) %>
+    <%= link_to ("#{client.business_name} #{client.first_name} #{client.last_name}"), client_path(client) %>
   </div>
   <% end %>
 </div>

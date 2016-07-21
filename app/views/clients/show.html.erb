@@ -1,2 +1,37 @@
-<h1>Clients#show</h1>
-<p>Find me in app/views/clients/show.html.erb</p>
+<div class="page-header client-page">
+  <div class="row">
+    <div class="medium-12 columns">
+      <h1><%= @client.business_name %></h1>
+      <h4><%= "#{@client.invoicing_address}, #{@client.postcode}" %></h4>
+    </div>
+  </div>  
+</div>
+
+<div class="row">
+  <div class="medium-12 columns">
+    <p><%= @client.business_name %><br>
+      <%= "#{@client.invoicing_address} #{@client.postcode}, #{@client.country}" %><br>
+      Billing email: <%= @client.billing_email %><br>
+      <%= @client.telephone %>
+    </p>
+    <p>Contact name: <%= "#{@client.first_name} #{@client.last_name}" %>
+    <br>Contact email: <%= @client.email %><br>
+    Contact mobile: <%= @client.mobile %></p>
+
+    <p>This contact is a <%= @client.occupation %><br>
+    <% if @client.other %>
+      Other: <%= @client.other %>
+    <% end %>
+    </p>
+
+    Social media links:
+    <br>
+    <%= link_to "Facebook", "http://facebook.com/#{@client.facebook}", target: :blank %>
+    <br>
+    <%= link_to "Twitter", "http://twitter.com/#{@client.twitter}", target: :blank %>
+    <br>
+    <%= link_to "Instagram", "http://instagram.com/#{@client.instagram}", target: :blank %>
+
+
+  </div>
+</div>

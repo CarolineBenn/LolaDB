@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
+
   get 'clients', to: 'clients#index'
   get 'dresses', to: 'dresses#index'
+  get 'orders', to: 'orders#index'
 
   resources :dresses
   resources :clients 
+  resources :orders
 
   
   root 'dresses#index'

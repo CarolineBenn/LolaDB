@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Loladatabase</title>
+  <title>LolaDB</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -28,6 +28,7 @@
           </ul>
         </li>
         <li><%= link_to "Add Dress", new_dress_path %></li>
+        <li><%= link_to "Orders", orders_path %></li>
         <li class="has-dropdown">
           <%= link_to "Dresses", dresses_path %>
           <ul class="dropdown">
