@@ -1,23 +1,37 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  phone: MyString
-  email: MyString
-  notes: MyText
+  first_name: MyString
+  last_name: MyString
   business_name: MyString
-  business_address: MyText
+  email: MyString
+  billing_email: MyString
+  telephone: MyString
+  mobile: MyString
+  invoicing_address: MyText
+  postcode: MyString
+  country: MyString
+  occupation: MyString
+  other: MyString
   facebook: MyString
   twitter: MyString
   instagram: MyString
+  notes: MyText
 
 two:
-  name: MyString
-  phone: MyString
-  email: MyString
-  notes: MyText
+  first_name: MyString
+  last_name: MyString
   business_name: MyString
-  business_address: MyText
+  email: MyString
+  billing_email: MyString
+  telephone: MyString
+  mobile: MyString
+  invoicing_address: MyText
+  postcode: MyString
+  country: MyString
+  occupation: MyString
+  other: MyString
   facebook: MyString
   twitter: MyString
   instagram: MyString
+  notes: MyText

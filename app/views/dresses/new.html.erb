@@ -1,7 +1,13 @@
-<h1>Dresses#new</h1>
-<p>Find me in app/views/dresses/new.html.erb</p>
+<div class="page-header dress-page">
+  <div class="row">
+    <div class="medium-12 columns">
+      <h1>Add a Dress to the Database</h1>
+    </div>
+  </div>  
+</div>
 
-
+<div class="row">
+<div class="medium-12 columns">
 <h2>Form for dresses new:</h2>
 
 <%= form_for @dress do |f| %>
@@ -16,3 +22,5 @@
 
   <%= f.submit "Submit", class: "button" %>
 <% end %>
+</div>
+</div>

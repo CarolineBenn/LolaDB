@@ -23,7 +23,7 @@
    background: #FA3AAB;
    margin-bottom: 3em;
    
-   &.dress-page { background: orange; }
+   &.dress-page { background: #FA3AAB; }
    &.client-page { background: #11AA88; }
 
    h1, h2, h3, h4, h5 ,h6 {
@@ -33,3 +33,7 @@
    }
 
  }
+
+.medium-4.columns.dress-tile:last-child {
+  float: left;
+}

@@ -1,2 +1,68 @@
-<h1>Clients#new</h1>
-<p>Find me in app/views/clients/new.html.erb</p>
+<div class="page-header client-page">
+  <div class="row">
+    <div class="medium-12 columns">
+      <h1>Add a Client to the Database</h1>
+    </div>
+  </div>  
+</div>
+
+<div class="row">
+<div class="medium-6 columns">
+<h2>Form for new clients:</h2>
+
+<%= form_for @client do |f| %>
+
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name, autofocus: true, placeholder: "First Name" %>
+
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name, autofocus: true, placeholder: "Last Name" %>
+
+  <%= f.label :business_name %>
+  <%= f.text_field :business_name, autofocus: true, placeholder: "Business Name" %>
+
+  <%= f.label :email %>
+  <%= f.text_field :email, autofocus: true, placeholder: "Email" %>
+
+  <%= f.label :billing_email %>
+  <%= f.text_field :billing_email, autofocus: true, placeholder: "Billing email" %>
+
+  <%= f.label :telephone %>
+  <%= f.text_field :telephone, autofocus: true, placeholder: "Telephone Number" %>
+
+  <%= f.label :mobile %>
+  <%= f.text_field :mobile, autofocus: true, placeholder: "Mobile Number" %>
+
+  <%= f.label :invoicing_address %>
+  <%= f.text_field :invoicing_address, autofocus: true, placeholder: "Invoicing Address" %>
+
+  <%= f.label :postcode %>
+  <%= f.text_field :postcode, autofocus: true, placeholder: "Postcode" %>
+
+  <%= f.label :country %>
+  <%= f.text_field :country, autofocus: true, placeholder: "Country"  %>
+
+  <span>Note: Should really make this one a selection option (designer, entrepreneur, student, other)</span>
+  <%= f.label :occupation %>
+  <%= f.text_field :occupation, autofocus: true, placeholder: "Occupation" %>
+
+  <span>In case of other:</span>
+  <%= f.label :other %>
+  <%= f.text_field :other, autofocus: true, placeholder: "Please describe occupation" %>
+
+  <%= f.label :facebook %>
+  <%= f.text_field :facebook, autofocus: true, placeholder: "Facebook URL" %>
+
+  <%= f.label :twitter %>
+  <%= f.text_field :twitter, autofocus: true, placeholder: "Twitter handle" %>
+
+  <%= f.label :instagram %>
+  <%= f.text_field :instagram, autofocus: true, placeholder: "Instagram handle"  %>
+
+  <%= f.label :notes %>
+  <%= f.text_field :notes, autofocus: true, placeholder: "Any notes about the customer" %>
+
+  <%= f.submit "Submit", class: "button" %>
+<% end %>
+</div>
+</div>
