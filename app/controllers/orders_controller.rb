@@ -6,6 +6,14 @@ class OrdersController < ApplicationController
   end
 
   def new
+
+    unless params[:client_id].nil?
+      @order = Order.new(:client_id => params[:client_id])
+      @client = Client.find(params[:client_id])
+    else
+      @order = Order.new
+    end
+
   end
 
   def create

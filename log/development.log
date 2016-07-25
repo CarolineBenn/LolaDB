@@ -12846,3 +12846,662 @@ Started GET "/assets/test.self-9451de1d8787f0502caa40af83f7ff956f4d9bafe6df63eee
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-25 14:05:31 +0100
+
+
+Started GET "/clients/1" for ::1 at 2016-07-25 14:13:49 +0100
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClient Load (3.8ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered clients/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 131ms (Views: 123.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/clients/1" for ::1 at 2016-07-25 14:19:23 +0100
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mClient Load (0.3ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered clients/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 41ms (Views: 25.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/clients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:19:23 +0100
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:19:23 +0100
+
+
+Started GET "/assets/foundation.min.self-35376cedab550837a894b5336dc978e65c7880960efa135709a5f5c02d874077.css?body=1" for ::1 at 2016-07-25 14:19:23 +0100
+
+
+Started GET "/assets/application.self-d4130bfbfbcdc9fd1bdcd45015223c6540272e93b66ad2c514dc795bede8e3ab.css?body=1" for ::1 at 2016-07-25 14:19:23 +0100
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2016-07-25 14:19:23 +0100
+
+
+Started GET "/assets/dresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:19:23 +0100
+
+
+Started GET "/assets/jquery.self-531d4cb884ed45ea19381d13707d3eb4ba477ceac524282cb603ffcc6e968b3f.js?body=1" for ::1 at 2016-07-25 14:19:23 +0100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-25 14:19:23 +0100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-25 14:19:23 +0100
+
+
+Started GET "/assets/clients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:19:23 +0100
+
+
+Started GET "/assets/dresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:19:23 +0100
+
+
+Started GET "/assets/foundation.min.self-57f8cdb550b449186f2342f00dcd6859db87afd5c60340fa73aaba5b9666a565.js?body=1" for ::1 at 2016-07-25 14:19:23 +0100
+
+
+Started GET "/assets/modernizr.self-2d7046ff4177200424ae01afcd77f378c77efbcd3ca51366f47dfbdccdcc85bc.js?body=1" for ::1 at 2016-07-25 14:19:23 +0100
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:19:23 +0100
+
+
+Started GET "/assets/test.self-9451de1d8787f0502caa40af83f7ff956f4d9bafe6df63eee4083f72c27ae53a.js?body=1" for ::1 at 2016-07-25 14:19:23 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-25 14:19:23 +0100
+
+
+Started GET "/orders/new?client_id%5Bclient_id%5D=1" for ::1 at 2016-07-25 14:19:24 +0100
+Processing by OrdersController#new as HTML
+  Parameters: {"client_id"=>{"client_id"=>"1"}}
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 2.6ms)
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/orders_controller.rb:9:in `new'
+
+
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.0ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.6ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (125.6ms)
+
+
+Started GET "/clients/1" for ::1 at 2016-07-25 14:19:42 +0100
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered clients/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:19:42 +0100
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:19:42 +0100
+
+
+Started GET "/assets/application.self-d4130bfbfbcdc9fd1bdcd45015223c6540272e93b66ad2c514dc795bede8e3ab.css?body=1" for ::1 at 2016-07-25 14:19:42 +0100
+
+
+Started GET "/assets/dresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:19:42 +0100
+
+
+Started GET "/assets/foundation.min.self-35376cedab550837a894b5336dc978e65c7880960efa135709a5f5c02d874077.css?body=1" for ::1 at 2016-07-25 14:19:42 +0100
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2016-07-25 14:19:42 +0100
+
+
+Started GET "/assets/jquery.self-531d4cb884ed45ea19381d13707d3eb4ba477ceac524282cb603ffcc6e968b3f.js?body=1" for ::1 at 2016-07-25 14:19:42 +0100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-25 14:19:42 +0100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-25 14:19:42 +0100
+
+
+Started GET "/assets/clients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:19:42 +0100
+
+
+Started GET "/assets/dresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:19:42 +0100
+
+
+Started GET "/assets/foundation.min.self-57f8cdb550b449186f2342f00dcd6859db87afd5c60340fa73aaba5b9666a565.js?body=1" for ::1 at 2016-07-25 14:19:42 +0100
+
+
+Started GET "/assets/modernizr.self-2d7046ff4177200424ae01afcd77f378c77efbcd3ca51366f47dfbdccdcc85bc.js?body=1" for ::1 at 2016-07-25 14:19:42 +0100
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:19:42 +0100
+
+
+Started GET "/assets/test.self-9451de1d8787f0502caa40af83f7ff956f4d9bafe6df63eee4083f72c27ae53a.js?body=1" for ::1 at 2016-07-25 14:19:42 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-25 14:19:42 +0100
+
+
+Started GET "/orders/new?client_id%5Bclient_id%5D=1" for ::1 at 2016-07-25 14:19:44 +0100
+Processing by OrdersController#new as HTML
+  Parameters: {"client_id"=>{"client_id"=>"1"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/orders_controller.rb:9:in `new'
+
+
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.7ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.4ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (104.1ms)
+
+
+Started GET "/clients/1" for ::1 at 2016-07-25 14:19:58 +0100
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mClient Load (0.2ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered clients/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:19:58 +0100
+
+
+Started GET "/assets/dresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:19:58 +0100
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:19:58 +0100
+
+
+Started GET "/assets/foundation.min.self-35376cedab550837a894b5336dc978e65c7880960efa135709a5f5c02d874077.css?body=1" for ::1 at 2016-07-25 14:19:58 +0100
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2016-07-25 14:19:58 +0100
+
+
+Started GET "/assets/jquery.self-531d4cb884ed45ea19381d13707d3eb4ba477ceac524282cb603ffcc6e968b3f.js?body=1" for ::1 at 2016-07-25 14:19:58 +0100
+
+
+Started GET "/assets/application.self-d4130bfbfbcdc9fd1bdcd45015223c6540272e93b66ad2c514dc795bede8e3ab.css?body=1" for ::1 at 2016-07-25 14:19:58 +0100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-25 14:19:58 +0100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-25 14:19:58 +0100
+
+
+Started GET "/assets/clients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:19:58 +0100
+
+
+Started GET "/assets/dresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:19:58 +0100
+
+
+Started GET "/assets/foundation.min.self-57f8cdb550b449186f2342f00dcd6859db87afd5c60340fa73aaba5b9666a565.js?body=1" for ::1 at 2016-07-25 14:19:58 +0100
+
+
+Started GET "/assets/modernizr.self-2d7046ff4177200424ae01afcd77f378c77efbcd3ca51366f47dfbdccdcc85bc.js?body=1" for ::1 at 2016-07-25 14:19:58 +0100
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:19:58 +0100
+
+
+Started GET "/assets/test.self-9451de1d8787f0502caa40af83f7ff956f4d9bafe6df63eee4083f72c27ae53a.js?body=1" for ::1 at 2016-07-25 14:19:58 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-25 14:19:58 +0100
+
+
+Started GET "/orders/new?client_id=1" for ::1 at 2016-07-25 14:20:00 +0100
+Processing by OrdersController#new as HTML
+  Parameters: {"client_id"=>"1"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ArgumentError (When assigning attributes, you must pass a hash as an argument.):
+  app/controllers/orders_controller.rb:9:in `new'
+
+
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.3ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.4ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (107.5ms)
+
+
+Started GET "/orders/new?client_id=1" for ::1 at 2016-07-25 14:20:21 +0100
+Processing by OrdersController#new as HTML
+  Parameters: {"client_id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+ArgumentError (When assigning attributes, you must pass a hash as an argument.):
+  app/controllers/orders_controller.rb:9:in `new'
+
+
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (16.7ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.6ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (113.9ms)
+
+
+Started GET "/clients/1" for ::1 at 2016-07-25 14:20:24 +0100
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered clients/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/clients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:20:24 +0100
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2016-07-25 14:20:24 +0100
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:20:24 +0100
+
+
+Started GET "/assets/dresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:20:24 +0100
+
+
+Started GET "/assets/foundation.min.self-35376cedab550837a894b5336dc978e65c7880960efa135709a5f5c02d874077.css?body=1" for ::1 at 2016-07-25 14:20:24 +0100
+
+
+Started GET "/assets/application.self-d4130bfbfbcdc9fd1bdcd45015223c6540272e93b66ad2c514dc795bede8e3ab.css?body=1" for ::1 at 2016-07-25 14:20:24 +0100
+
+
+Started GET "/assets/jquery.self-531d4cb884ed45ea19381d13707d3eb4ba477ceac524282cb603ffcc6e968b3f.js?body=1" for ::1 at 2016-07-25 14:20:24 +0100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-25 14:20:24 +0100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-25 14:20:24 +0100
+
+
+Started GET "/assets/clients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:20:24 +0100
+
+
+Started GET "/assets/dresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:20:24 +0100
+
+
+Started GET "/assets/foundation.min.self-57f8cdb550b449186f2342f00dcd6859db87afd5c60340fa73aaba5b9666a565.js?body=1" for ::1 at 2016-07-25 14:20:24 +0100
+
+
+Started GET "/assets/modernizr.self-2d7046ff4177200424ae01afcd77f378c77efbcd3ca51366f47dfbdccdcc85bc.js?body=1" for ::1 at 2016-07-25 14:20:24 +0100
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:20:24 +0100
+
+
+Started GET "/assets/test.self-9451de1d8787f0502caa40af83f7ff956f4d9bafe6df63eee4083f72c27ae53a.js?body=1" for ::1 at 2016-07-25 14:20:24 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-25 14:20:24 +0100
+
+
+Started GET "/orders/new?client_id%5Bclient_id%5D=1" for ::1 at 2016-07-25 14:20:25 +0100
+Processing by OrdersController#new as HTML
+  Parameters: {"client_id"=>{"client_id"=>"1"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/orders_controller.rb:9:in `new'
+
+
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.8ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (116.2ms)
+
+
+Started GET "/clients/1" for ::1 at 2016-07-25 14:25:51 +0100
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mClient Load (0.2ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered clients/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 37ms (Views: 24.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/dresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:25:51 +0100
+
+
+Started GET "/assets/clients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:25:51 +0100
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2016-07-25 14:25:51 +0100
+
+
+Started GET "/assets/foundation.min.self-35376cedab550837a894b5336dc978e65c7880960efa135709a5f5c02d874077.css?body=1" for ::1 at 2016-07-25 14:25:51 +0100
+
+
+Started GET "/assets/application.self-d4130bfbfbcdc9fd1bdcd45015223c6540272e93b66ad2c514dc795bede8e3ab.css?body=1" for ::1 at 2016-07-25 14:25:51 +0100
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:25:51 +0100
+
+
+Started GET "/assets/jquery.self-531d4cb884ed45ea19381d13707d3eb4ba477ceac524282cb603ffcc6e968b3f.js?body=1" for ::1 at 2016-07-25 14:25:51 +0100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-25 14:25:51 +0100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-25 14:25:51 +0100
+
+
+Started GET "/assets/clients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:25:51 +0100
+
+
+Started GET "/assets/dresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:25:51 +0100
+
+
+Started GET "/assets/foundation.min.self-57f8cdb550b449186f2342f00dcd6859db87afd5c60340fa73aaba5b9666a565.js?body=1" for ::1 at 2016-07-25 14:25:51 +0100
+
+
+Started GET "/assets/modernizr.self-2d7046ff4177200424ae01afcd77f378c77efbcd3ca51366f47dfbdccdcc85bc.js?body=1" for ::1 at 2016-07-25 14:25:51 +0100
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:25:51 +0100
+
+
+Started GET "/assets/test.self-9451de1d8787f0502caa40af83f7ff956f4d9bafe6df63eee4083f72c27ae53a.js?body=1" for ::1 at 2016-07-25 14:25:51 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-25 14:25:51 +0100
+
+
+Started GET "/orders/new?client_info%5Bclient_id%5D=1" for ::1 at 2016-07-25 14:25:54 +0100
+Processing by OrdersController#new as HTML
+  Parameters: {"client_info"=>{"client_id"=>"1"}}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.7ms)
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/orders_controller.rb:9:in `new'
+
+
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.3ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.1ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (106.3ms)
+
+
+Started GET "/orders/new?client_info%5Bclient_id%5D=1" for ::1 at 2016-07-25 14:26:22 +0100
+Processing by OrdersController#new as HTML
+  Parameters: {"client_info"=>{"client_id"=>"1"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/orders_controller.rb:9:in `new'
+
+
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.3ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.6ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (103.9ms)
+
+
+Started GET "/orders/new?client_info%5Bclient_id%5D=1" for ::1 at 2016-07-25 14:26:22 +0100
+Processing by OrdersController#new as HTML
+  Parameters: {"client_info"=>{"client_id"=>"1"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/orders_controller.rb:9:in `new'
+
+
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.0ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.7ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Caroline/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (112.3ms)
+
+
+Started GET "/clients/1" for ::1 at 2016-07-25 14:26:24 +0100
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered clients/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:26:24 +0100
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2016-07-25 14:26:24 +0100
+
+
+Started GET "/assets/dresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:26:24 +0100
+
+
+Started GET "/assets/application.self-d4130bfbfbcdc9fd1bdcd45015223c6540272e93b66ad2c514dc795bede8e3ab.css?body=1" for ::1 at 2016-07-25 14:26:24 +0100
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:26:24 +0100
+
+
+Started GET "/assets/foundation.min.self-35376cedab550837a894b5336dc978e65c7880960efa135709a5f5c02d874077.css?body=1" for ::1 at 2016-07-25 14:26:24 +0100
+
+
+Started GET "/assets/jquery.self-531d4cb884ed45ea19381d13707d3eb4ba477ceac524282cb603ffcc6e968b3f.js?body=1" for ::1 at 2016-07-25 14:26:24 +0100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-25 14:26:24 +0100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-25 14:26:24 +0100
+
+
+Started GET "/assets/clients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:26:24 +0100
+
+
+Started GET "/assets/dresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:26:24 +0100
+
+
+Started GET "/assets/foundation.min.self-57f8cdb550b449186f2342f00dcd6859db87afd5c60340fa73aaba5b9666a565.js?body=1" for ::1 at 2016-07-25 14:26:24 +0100
+
+
+Started GET "/assets/modernizr.self-2d7046ff4177200424ae01afcd77f378c77efbcd3ca51366f47dfbdccdcc85bc.js?body=1" for ::1 at 2016-07-25 14:26:24 +0100
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:26:24 +0100
+
+
+Started GET "/assets/test.self-9451de1d8787f0502caa40af83f7ff956f4d9bafe6df63eee4083f72c27ae53a.js?body=1" for ::1 at 2016-07-25 14:26:24 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-25 14:26:24 +0100
+
+
+Started GET "/orders/new" for ::1 at 2016-07-25 14:26:26 +0100
+Processing by OrdersController#new as HTML
+  Rendered orders/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/1" for ::1 at 2016-07-25 14:28:50 +0100
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mClient Load (0.2ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered clients/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 43ms (Views: 28.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/dresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:28:50 +0100
+
+
+Started GET "/assets/clients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:28:50 +0100
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2016-07-25 14:28:50 +0100
+
+
+Started GET "/assets/foundation.min.self-35376cedab550837a894b5336dc978e65c7880960efa135709a5f5c02d874077.css?body=1" for ::1 at 2016-07-25 14:28:50 +0100
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:28:50 +0100
+
+
+Started GET "/assets/application.self-d4130bfbfbcdc9fd1bdcd45015223c6540272e93b66ad2c514dc795bede8e3ab.css?body=1" for ::1 at 2016-07-25 14:28:50 +0100
+
+
+Started GET "/assets/jquery.self-531d4cb884ed45ea19381d13707d3eb4ba477ceac524282cb603ffcc6e968b3f.js?body=1" for ::1 at 2016-07-25 14:28:50 +0100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-25 14:28:50 +0100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-25 14:28:50 +0100
+
+
+Started GET "/assets/clients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:28:50 +0100
+
+
+Started GET "/assets/dresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:28:50 +0100
+
+
+Started GET "/assets/foundation.min.self-57f8cdb550b449186f2342f00dcd6859db87afd5c60340fa73aaba5b9666a565.js?body=1" for ::1 at 2016-07-25 14:28:50 +0100
+
+
+Started GET "/assets/modernizr.self-2d7046ff4177200424ae01afcd77f378c77efbcd3ca51366f47dfbdccdcc85bc.js?body=1" for ::1 at 2016-07-25 14:28:50 +0100
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:28:50 +0100
+
+
+Started GET "/assets/test.self-9451de1d8787f0502caa40af83f7ff956f4d9bafe6df63eee4083f72c27ae53a.js?body=1" for ::1 at 2016-07-25 14:28:50 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-25 14:28:50 +0100
+
+
+Started GET "/orders/new?client_id=1" for ::1 at 2016-07-25 14:28:51 +0100
+Processing by OrdersController#new as HTML
+  Parameters: {"client_id"=>"1"}
+  Rendered orders/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 27.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/orders/new?client_id=1" for ::1 at 2016-07-25 14:30:11 +0100
+Processing by OrdersController#new as HTML
+  Parameters: {"client_id"=>"1"}
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered orders/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 43ms (Views: 24.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/clients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:30:11 +0100
+
+
+Started GET "/assets/application.self-d4130bfbfbcdc9fd1bdcd45015223c6540272e93b66ad2c514dc795bede8e3ab.css?body=1" for ::1 at 2016-07-25 14:30:11 +0100
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2016-07-25 14:30:11 +0100
+
+
+Started GET "/assets/foundation.min.self-35376cedab550837a894b5336dc978e65c7880960efa135709a5f5c02d874077.css?body=1" for ::1 at 2016-07-25 14:30:11 +0100
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:30:11 +0100
+
+
+Started GET "/assets/dresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 14:30:11 +0100
+
+
+Started GET "/assets/jquery.self-531d4cb884ed45ea19381d13707d3eb4ba477ceac524282cb603ffcc6e968b3f.js?body=1" for ::1 at 2016-07-25 14:30:11 +0100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-25 14:30:11 +0100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-25 14:30:11 +0100
+
+
+Started GET "/assets/clients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:30:11 +0100
+
+
+Started GET "/assets/dresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:30:11 +0100
+
+
+Started GET "/assets/foundation.min.self-57f8cdb550b449186f2342f00dcd6859db87afd5c60340fa73aaba5b9666a565.js?body=1" for ::1 at 2016-07-25 14:30:11 +0100
+
+
+Started GET "/assets/modernizr.self-2d7046ff4177200424ae01afcd77f378c77efbcd3ca51366f47dfbdccdcc85bc.js?body=1" for ::1 at 2016-07-25 14:30:11 +0100
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 14:30:11 +0100
+
+
+Started GET "/assets/test.self-9451de1d8787f0502caa40af83f7ff956f4d9bafe6df63eee4083f72c27ae53a.js?body=1" for ::1 at 2016-07-25 14:30:11 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-25 14:30:11 +0100
+
+
+Started GET "/orders/new" for ::1 at 2016-07-25 14:30:15 +0100
+Processing by OrdersController#new as HTML
+  Rendered orders/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.0ms)
