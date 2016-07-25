@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160725122541) do
+ActiveRecord::Schema.define(version: 20160725142606) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,14 +46,49 @@ ActiveRecord::Schema.define(version: 20160725122541) do
     t.string   "image"
   end
 
+  create_table "fabrics", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "cost"
+    t.string   "fabric_type"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "items", force: :cascade do |t|
+    t.integer  "order_id"
+    t.integer  "client_id"
+    t.string   "order_number"
+    t.integer  "dress_id"
+    t.integer  "fabric_id"
+    t.integer  "qty"
+    t.string   "status"
+    t.date     "expected_date"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
   create_table "orders", force: :cascade do |t|
     t.string   "order_number"
-    t.integer  "quantity"
     t.string   "status"
     t.date     "expected_date"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.integer  "client_id"
+  end
+
+  create_table "suppliers", force: :cascade do |t|
+    t.string   "business_name"
+    t.string   "contact_name"
+    t.string   "email"
+    t.string   "billing_email"
+    t.string   "telephone"
+    t.string   "mobile"
+    t.text     "invoicing_address"
+    t.string   "postcode"
+    t.string   "country"
+    t.text     "notes"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
 end

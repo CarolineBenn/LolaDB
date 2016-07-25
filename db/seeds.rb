@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+
+o1 = Order.create!(order_number: "ord001", status: "pending", expected_date: "22/02/2017", client_id: 1)
