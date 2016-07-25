@@ -10,9 +10,10 @@
   <div class="medium-6 columns">
     <h2><%= @dress.name %></h2>
     <%= @dress.description %>
+    <br>
     £<%= @dress.rrp %>
   </div>
   <div class="medium-6 columns">
-    <p>Image to go here eventually</p>
+    <%= image_tag @dress.image %>
   </div>
 </div>

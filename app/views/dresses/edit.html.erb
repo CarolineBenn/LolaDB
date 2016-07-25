@@ -1,2 +1,28 @@
-<h1>Dresses#edit</h1>
-<p>Find me in app/views/dresses/edit.html.erb</p>
+<div class="page-header dress-page">
+  <div class="row">
+    <div class="medium-12 columns">
+      <h1>Edit <%= @dress.name %></h1>
+    </div>
+  </div>  
+</div>
+
+<div class="row">
+<div class="medium-12 columns">
+
+<%= form_for @dress do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, autofocus: true, placeholder: "Dress Name" %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description, autofocus: true, placeholder: "Description" %>
+
+  <%= f.label :image %>
+  <%= f.text_field :image, autofocus: true, placeholder: "Image URL"%>
+
+  <%= f.label :rrp %>
+  <%= f.number_field :rrp, autofocus: true, placeholder: "eg 225"%>
+
+  <%= f.submit "Submit", class: "button" %>
+<% end %>
+</div>
+</div>

@@ -21,9 +21,17 @@ class DressesController < ApplicationController
   end
 
   def edit
+    @dress = Dress.find(params[:id])
   end
 
   def update
+    @dress = Dress.find(params[:id])
+
+    if @dress.update(dress_params)
+      redirect_to @dress
+    else
+      render 'edit'
+    end
   end
 
   def delete
@@ -36,7 +44,7 @@ class DressesController < ApplicationController
   private
 
   def dress_params
-    params.require(:dress).permit(:name, :description, :rrp)
+    params.require(:dress).permit(:name, :description, :rrp, :image)
   end
 
 
