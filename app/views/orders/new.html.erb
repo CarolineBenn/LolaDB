@@ -23,6 +23,15 @@
       <%= f.label :expected_date %>
       <%= f.date_select :expected_date %>
 
+
+      <%= f.fields_for :item do |builder| %>
+        
+
+        <!-- THIS IS WHAT I REALLY WANT TO WORK :-/ -->       
+        <%= render "partials/items_fields", :f => builder %>
+      
+      <% end %>
+
       <%= f.submit "Submit", class: "button one-hundred margin-top" %>
 
     <% end %>

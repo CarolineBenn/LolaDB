@@ -1,0 +1,28 @@
+
+<div class='medium-6 columns nested-fields'>
+    <%= f.label :client_id %>
+    <%= f.text_field :client_id, autofocus: true, placeholder: "Client ID" %>
+    
+    <%= f.label :order_id %>
+    <%= f.text_field :order_id, autofocus: true, placeholder: "Order ID" %>
+
+    <%= f.label :order_number %>
+    <%= f.text_field :order_id, autofocus: true, placeholder: "Order number" %>
+
+    <%= f.label :dress_id %>
+    <%= f.text_field :dress_id, autofocus: true, placeholder: "Dress ID" %>
+
+    <%= f.label :fabric_id %>
+    <%= f.text_field :fabric_id, autofocus: true, placeholder: "Fabric ID" %>
+
+    <%= f.label :qty %>
+    <%= f.number_field :qty, autofocus: true, placeholder: "Quantity" %>
+
+    <%= f.label :status %>
+    <%= f.text_field :status, autofocus: true, placeholder: "Item status" %>
+
+    <%= f.label :expected_date %>
+    <%= f.text_field :expected_date, autofocus: true, placeholder: "Expected Date" %>
+
+    <%#= link_to_remove_association "Remove item", item %>
+</div>          
