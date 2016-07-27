@@ -9,13 +9,21 @@ class OrdersController < ApplicationController
     @client = Client.find(client_id)
   end
 
+
   def new
     @clients = Client.all
     unless params[:client_id].nil?
       @order = Order.new(:client_id => params[:client_id])
+      3.times do
+        item = @order.items.build
+      end
+
       @client = Client.find(params[:client_id])
     else
       @order = Order.new
+      3.times do
+        item = @order.items.build
+      end
     end
 
   end
@@ -41,7 +49,7 @@ class OrdersController < ApplicationController
   private
 
   def order_params
-    params.require(:order).permit(:order_number, :status, :expected_date, :client_id)
+    params.require(:order).permit(:order_number, :status, :expected_date, :client_id, items_attributes: [:id, :client_id, :order_id, :order_number, :dress_id, :fabric_id, :qty, :status, :expected_date])
   end
 
 end
