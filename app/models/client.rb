@@ -7,15 +7,12 @@ class Client < ActiveRecord::Base
     "#{business_name} - #{first_name} #{last_name}"
   end
 
-  # protected
+  protected
   # Check this is right?  
   def create_default_values
-    self.occupation = "n/a" if !self.occupation
-    self.other      = "n/a" if !self.other
-    # self.notes      = "n/a" if !self.notes
-    if !self.notes.blank?
-      self.notes = "n/a"
-    end
+    self.occupation = "n/a" if self.occupation.blank?
+    self.other      = "n/a" if self.other.blank?
+    self.notes      = "n/a" if self.notes.blank?
   end
 
 
