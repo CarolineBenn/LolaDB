@@ -7,13 +7,16 @@
 </div>
 
 <div class="row">
-  <div class="medium-6 columns">
+  <div class="medium-6 medium-push-6 columns">
+    <%= link_to "Edit #{@dress.name}", edit_dress_path(@dress), class: "button one-hundred" %>
+  </div>
+  <div class="medium-6 medium-pull-6 columns">
     <h2><%= @dress.name %></h2>
     <%= @dress.description %>
     <br>
     £<%= @dress.rrp %>
   </div>
   <div class="medium-6 columns">
-    <%= image_tag @dress.image %>
+    <%= image_tag @dress.image.url %>
   </div>
 </div>

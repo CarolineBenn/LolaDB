@@ -19,6 +19,10 @@
    background: #efefef;
  }
 
+.one-hundred {
+  width: 100%;
+}
+
 .page-header {
   background: #FA3AAB;
   margin-bottom: 3em;
@@ -37,3 +41,49 @@
 .medium-4.columns.dress-tile:last-child {
   float: left;
 }
+
+/* Forms */
+
+.margin-top {
+  margin-top: 1em;
+}
+
+.margin-bottom {
+  margin-bottom: 1em;
+}
+
+
+#order_client_id {
+  margin-bottom: 1em;
+  color: #666666;
+}
+
+#order_expected_date_1i, #order_expected_date_2i, #order_expected_date_3i {
+  width: 32.5%;
+  color: #666666;
+  height: 3em;
+
+  @media (max-width: 383px){
+    width: 100%;
+    margin-bottom: 0.5em
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

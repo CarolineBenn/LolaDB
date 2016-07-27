@@ -5,3 +5,15 @@
     </div>
   </div>  
 </div>
+
+<% @orders.in_groups_of(3) do |group| %>
+<div class="row">
+  <% group.compact.each do |order| %>
+  <div class="medium-4 columns order-tile">
+    <%= link_to order.id, order_path(order) %>
+  </div>
+  <% end %>
+</div>
+<hr>
+<% end %>
+

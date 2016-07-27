@@ -1,7 +1,19 @@
 <div class="page-header order-page">
   <div class="row">
     <div class="medium-12 columns">
-      <h1>Orders</h1>
+      <h1><%= "#{@order.order_number} for #{@client.business_name}" %> </h1>
     </div>
   </div>  
+</div>
+
+<div class="row">
+  <div class="medium-6 columns">
+  <%= @order.inspect %>
+  </div>
+  <div class="medium-6 columns">
+    <p>Client details:</p>
+
+    <%= @client.business_name %>
+
+  </div>
 </div>

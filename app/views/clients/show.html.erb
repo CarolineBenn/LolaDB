@@ -31,12 +31,18 @@
     </p>
 
     Social media links:
-    <br>
+    <br> 
+    <% if !@client.facebook.blank? %>
     <%= link_to "Facebook", "http://facebook.com/#{@client.facebook}", target: :blank %>
+    <% end %>
     <br>
+    <% if !@client.twitter.blank? %>
     <%= link_to "Twitter", "http://twitter.com/#{@client.twitter}", target: :blank %>
+    <% end %>
     <br>
+    <% if !@client.instagram.blank? %>
     <%= link_to "Instagram", "http://instagram.com/#{@client.instagram}", target: :blank %>
+    <% end %>
 
 
   </div>
